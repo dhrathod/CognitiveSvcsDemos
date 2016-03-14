@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using Microsoft.ProjectOxford.Vision;
+using System.Configuration;
 
 namespace ThumbNailConsole
 {
@@ -10,7 +11,8 @@ namespace ThumbNailConsole
         static void Main(string[] args)
         {
 
-            string subscriptionKey = "15e24a988f484591b17bcc4713aec800";
+            string subscriptionKey = ConfigurationSettings.AppSettings["ThumbnailKey"].ToString();
+
             IVisionServiceClient visionClient = new VisionServiceClient(subscriptionKey);
 
             string originalPicture = @"https://giard.smugmug.com/Travel/Sweden-2015/i-ncF6hXw/0/L/IMG_1560-L.jpg";
