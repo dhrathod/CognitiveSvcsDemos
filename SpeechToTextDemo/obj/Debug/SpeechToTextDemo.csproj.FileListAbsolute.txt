@@ -1,0 +1,15 @@
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\bin\Debug\SpeechToTextDemo.exe.config
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\bin\Debug\SpeechToTextDemo.exe
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\bin\Debug\SpeechToTextDemo.pdb
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\bin\Debug\SpeechClient.dll
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\MainWindow.g.cs
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\App.g.cs
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo_MarkupCompile.cache
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo_MarkupCompile.lref
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\MainWindow.baml
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo.g.resources
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo.Properties.Resources.resources
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo.csproj.GenerateResource.Cache
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo.exe
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo.pdb
+C:\development\ProjectOxfordDemos\SpeechToTextDemo\obj\Debug\SpeechToTextDemo.csprojResolveAssemblyReference.cache
