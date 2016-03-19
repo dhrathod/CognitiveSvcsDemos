@@ -30,13 +30,13 @@ namespace SpeechToTextDemo
             RecordButton.IsEnabled = false;
             OutputTextbox.Background = Brushes.Green;
             OutputTextbox.Foreground = Brushes.White;
-            ConvertTextToSpeech();
+            ConvertSpeechToText();
         }
 
         /// <summary>
         /// Start listening. 
         /// </summary>
-        private void ConvertTextToSpeech()
+        private void ConvertSpeechToText()
         {
             var speechRecognitionMode = SpeechRecognitionMode.ShortPhrase;
             string language = "en-us";

@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Project Oxford</h1>
+    <h2>Computer Vision OCR Demo</h2>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <p>
+            <select id="ImageUrlDropdown">
+                <option value="https://noemifairy.files.wordpress.com/2013/06/robert-frost-the-road-not-taken.jpg">Frost</option>
+                <option value="http://www.traditionalmusic.co.uk/songster/png/02-paul-reveres-ride.png">Longfellow</option>
+                <option value="http://media.tumblr.com/tumblr_lrbhs0RY2o1qaaiuh.png">Poe</option>
+                <option value="http://mypoeticside.com/wp-content/uploads/textimage/b5bb3f07ab91e9c2a235abd6f3b0c4e5.png">Carroll</option>
+                <option value="http://www.poemhunter.com/i/poem_images/875/the-hippopotamus.jpg">Nash</option>
+                <option value="http://www.poemhunter.com/i/poem_images/695/a-noiseless-patient-spider.jpg">Whitman</option>
+                <option value="http://www.legendinc.com/Pages/MiscellaneousPages/LovePoems/SheIsMadeOfTruth.gif">Shakespeare</option>
+
+                
+
+                
+                
+            </select>
+        </p>
+        <p>
+            <button id="GetTextFromPictureButton">Get Text</button>
+        </p>
+        
+    @*</div>
+    <div class="col-md-4">*@
+        <div>Source: <span id="SourceUrlSpan"></span></div>
+        <iframe id="TextImageFrame" width="100%" height="800px"></iframe>
+    </div>
+    <div class="col-md-4">
+        <div id="OutputDiv"></div>
+    </div>
+</div>
+
+@section scripts{
+<script type="text/javascript">
+    $(function () {
+        $("#ImageUrlDropdown").change(function () {
+            var url = this.value;
+            showTextImage(url);
+        })
+
+        showTextImage = function (url) {
+            $("#SourceUrlSpan").text(url);
+            $("#TextImageFrame").attr("src", url);
+            $("#OutputDiv").text("");
+
+        }
+
+
+            $("#GetTextFromPictureButton").click(function () {
+                var url = $("#ImageUrlDropdown").val();
+
+                // TODO: Replace the value below with your subscription key
+                var subscriptionKey = "15e24a988f484591b17bcc4713aec800";
+
+            $.ajax({
+                type: "POST",
+                url: "https://api.projectoxford.ai/vision/v1/ocr?language=en", 
+                headers: { "Ocp-Apim-Subscription-Key": subscriptionKey },
+                contentType: "application/json",
+                data: '{ "Url": "' + url + '" }'
+            }).done(function (data) {
+                var outputDiv = $("#OutputDiv");
+                outputDiv.text("");
+
+                var linesOfText = data.regions[0].lines;
+                for (var i = 0; i < linesOfText.length; i++) {
+                    var output = "";
+
+                    var thisLine = linesOfText[i];
+                    var words = thisLine.words;
+                    for (var j = 0; j < words.length; j++) {
+                        var thisWord = words[j];
+                        output += thisWord.text;
+                        output += " ";
+
+                    }
+                    var newDiv = "<div>" + output + "</div>";
+                    outputDiv.append(newDiv);
+
+                }
+                
+            }).fail(function (err) {
+                $("#OutputDiv").text("ERROR!" + err.responseText);
+            });
+
+
+
+            });
+
+            $('#ImageUrlDropdown option:eq(0)').prop('selected', true);
+            showTextImage($('#ImageUrlDropdown option:eq(0)').val());
+
+
+    });
+
+
+</script>
+    }
+
