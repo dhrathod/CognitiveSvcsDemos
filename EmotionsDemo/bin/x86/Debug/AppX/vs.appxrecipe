@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-15T15:21:52.912</Modified>
+      <Modified>2016-04-02T23:04:27.639</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -66,7 +66,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\EmotionsDemo.exe">
       <PackagePath>EmotionsDemo.exe</PackagePath>
-      <Modified>2016-03-15T15:21:52.906</Modified>
+      <Modified>2016-04-02T23:04:27.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\EmotionsDemo.xr.xml">
       <PackagePath>EmotionsDemo.xr.xml</PackagePath>
@@ -74,7 +74,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\entrypoint\EmotionsDemo.exe">
       <PackagePath>entrypoint\EmotionsDemo.exe</PackagePath>
-      <Modified>2016-03-15T15:21:51.579</Modified>
+      <Modified>2016-04-02T23:04:23.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -102,7 +102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-14T20:49:57.862</Modified>
+      <Modified>2016-04-02T23:04:24.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

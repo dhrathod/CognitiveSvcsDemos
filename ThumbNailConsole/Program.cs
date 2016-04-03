@@ -19,8 +19,10 @@ namespace ThumbNailConsole
             int width = 200;
             int height = 100;
             bool smartCropping = true;
+            var thumbnail = visionClient.GetThumbnailAsync(originalPicture, width, height, smartCropping);
             byte[] thumbnailResult = null;
-            thumbnailResult = visionClient.GetThumbnailAsync(originalPicture, width, height, smartCropping).Result;
+            thumbnailResult = thumbnail.Result;
+
 
             string folder = @"c:\test";
             string thumbnaileFullPath = string.Format("{0}\\thumbnailResult_{1:yyyMMddhhmmss}.jpg", folder, DateTime.Now);

@@ -59,11 +59,11 @@
                 var url = $("#ImageUrlDropdown").val();
 
                 // TODO: Replace the value below with your subscription key
-                var subscriptionKey = "15e24a988f484591b17bcc4713aec800";
+                var subscriptionKey = "eef2eee91c5748c18e9a7334aad94b5b";
 
             $.ajax({
                 type: "POST",
-                url: "https://api.projectoxford.ai/vision/v1/ocr?language=en", 
+                url: "https://api.projectoxford.ai/vision/v1.0/ocr?language=en",
                 headers: { "Ocp-Apim-Subscription-Key": subscriptionKey },
                 contentType: "application/json",
                 data: '{ "Url": "' + url + '" }'

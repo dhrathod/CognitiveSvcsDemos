@@ -64,6 +64,6 @@ C:\development\ProjectOxfordDemos\OcrDemo\bin\Microsoft.Owin.Security.OAuth.xml
 C:\development\ProjectOxfordDemos\OcrDemo\bin\Microsoft.Owin.Security.Google.xml
 C:\development\ProjectOxfordDemos\OcrDemo\bin\Microsoft.Owin.Security.Twitter.xml
 C:\development\ProjectOxfordDemos\OcrDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\development\ProjectOxfordDemos\OcrDemo\obj\Debug\OcrDemo.csprojResolveAssemblyReference.cache
 C:\development\ProjectOxfordDemos\OcrDemo\obj\Debug\OcrDemo.dll
 C:\development\ProjectOxfordDemos\OcrDemo\obj\Debug\OcrDemo.pdb
+C:\development\ProjectOxfordDemos\OcrDemo\obj\Debug\OcrDemo.csprojResolveAssemblyReference.cache
