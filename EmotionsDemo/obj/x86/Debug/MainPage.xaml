@@ -18,15 +18,19 @@
                 Get Emotions
             </Button>
             <StackPanel Orientation="Vertical" Padding="5" BorderThickness="5" Width="300" Background="LightGray">
-                <TextBlock x:ConnectionId='6' Name="ResultsTexblockLabel">Results:</TextBlock>
-                <TextBlock x:ConnectionId='7' Name="ResultsTextblock" TextWrapping="WrapWholeWords"></TextBlock>
+                <TextBlock x:ConnectionId='7' Name="ResultsTexblockLabel">Results:</TextBlock>
+                <TextBlock x:ConnectionId='8' Name="ResultsTextblock" TextWrapping="WrapWholeWords"></TextBlock>
             </StackPanel>
             <StackPanel Orientation="Vertical" Padding="5" Width="300" Background="LightGray" BorderThickness="5">
-                <TextBlock x:ConnectionId='4' Name="RawResultsTexblockLabel">Raw Results:</TextBlock>
-                <TextBlock x:ConnectionId='5' Name="RawResultsTextblock"></TextBlock>
+                <TextBlock x:ConnectionId='5' Name="RawResultsTexblockLabel">Raw Results:</TextBlock>
+                <TextBlock x:ConnectionId='6' Name="RawResultsTextblock"></TextBlock>
             </StackPanel>
+                <Button x:ConnectionId='4' Name="ClearReponsesButton" Height="200" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                        FontSize="32"                                  >
+                    Clear Responses
+                </Button>
 
-        </StackPanel>
+            </StackPanel>
         <Image x:ConnectionId='2' Name="ImageToAnalyze" Source="{Binding SelectedValue, ElementName=ImageUrlCombobox}"></Image>
     </StackPanel>
     </ScrollViewer>

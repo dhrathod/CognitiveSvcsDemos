@@ -235,7 +235,6 @@ C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\System.Xml.ReaderWr
 C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\System.Xml.XDocument.dll
 C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\EmotionsDemo.csprojResolveAssemblyReference.cache
 C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\App.g.i.cs
 C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\App.g.cs
 C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\MainPage.g.i.cs
@@ -434,3 +433,4 @@ C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\Core\Assets\Wide310
 C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\Core\EmotionsDemo.xr.xml
 C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\Core\WinMetadata\Windows.winmd
 C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\Core\resources.pri
+C:\development\ProjectOxfordDemos\EmotionsDemo\obj\x86\Debug\EmotionsDemo.csprojResolveAssemblyReference.cache

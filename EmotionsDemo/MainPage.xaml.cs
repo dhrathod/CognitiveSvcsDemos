@@ -47,7 +47,6 @@ namespace EmotionsDemo
 
             string url = "";
             url = @"http://www.asianweek.com/wp-content/uploads/2008/04/dreamstimeweb_angry374345_11.jpg";
-            //url = ImageUrlTextbox.Text;
             url = ImageUrlCombobox.SelectedValue.ToString();
             GetEmotions(url);
 
@@ -61,7 +60,8 @@ namespace EmotionsDemo
             Windows.Storage.StorageFolder localFolder =
                 Windows.Storage.ApplicationData.Current.LocalFolder;
 
-            //localSettings.Values["EmotionApiKey"] = "<replace_with_your-api_key_and_uncomment";
+            // Replace with your key and uncomment!
+            //localSettings.Values["EmotionApiKey"] = "<Emotion API key>";
             string emotionApiKey = localSettings.Values["EmotionApiKey"].ToString();
 
             var emotionServiceClient = new EmotionServiceClient(emotionApiKey);
@@ -144,6 +144,16 @@ namespace EmotionsDemo
         {
             return "";
         }
+
+        private void ClearReponsesButton_Click(object sender, RoutedEventArgs e)
+        {
+            RawResultsTextblock.Text = "";
+
+            ResultsTextblock.Text = "";
+
+
+        }
+
     }
 }
 

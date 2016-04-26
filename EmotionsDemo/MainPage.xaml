@@ -25,8 +25,12 @@
                 <TextBlock Name="RawResultsTexblockLabel">Raw Results:</TextBlock>
                 <TextBlock Name="RawResultsTextblock"></TextBlock>
             </StackPanel>
+                <Button Name="ClearReponsesButton" Height="200" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                        FontSize="32" Click="ClearReponsesButton_Click">
+                    Clear Responses
+                </Button>
 
-        </StackPanel>
+            </StackPanel>
         <Image Name="ImageToAnalyze" Source="{Binding SelectedValue, ElementName=ImageUrlCombobox}"></Image>
     </StackPanel>
     </ScrollViewer>
