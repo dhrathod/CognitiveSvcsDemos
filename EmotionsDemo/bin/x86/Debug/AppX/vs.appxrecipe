@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-26T19:38:24.149</Modified>
+      <Modified>2016-04-27T22:47:56.279</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -66,15 +66,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\EmotionsDemo.exe">
       <PackagePath>EmotionsDemo.exe</PackagePath>
-      <Modified>2016-04-26T19:38:24.147</Modified>
+      <Modified>2016-04-27T22:47:56.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\EmotionsDemo.xr.xml">
       <PackagePath>EmotionsDemo.xr.xml</PackagePath>
-      <Modified>2016-03-14T19:14:17.268</Modified>
+      <Modified>2016-04-27T22:47:54.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\entrypoint\EmotionsDemo.exe">
       <PackagePath>entrypoint\EmotionsDemo.exe</PackagePath>
-      <Modified>2016-04-26T19:38:22.699</Modified>
+      <Modified>2016-04-27T22:47:54.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -102,7 +102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-26T19:38:23.505</Modified>
+      <Modified>2016-04-27T22:47:55.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\development\ProjectOxfordDemos\EmotionsDemo\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
