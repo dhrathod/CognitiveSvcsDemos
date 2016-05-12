@@ -1,14 +1,4 @@
 $(function () {
-
-
-    var leftPupilX = 0;
-    var leftPupilY = 0;
-    var rightPupilX = 0;
-    var rightPupilY = 0;
-    var leftEyeWidth = 10;
-    var mouthX = 0;
-    var mouthY = 0;
-
     var showImage = function () {
         var imageUrl = $("#imageUrlTextbox").val();
         if (imageUrl) {
@@ -18,8 +8,7 @@ $(function () {
 
 
     var getFaceInfo = function () {
-        var subscriptionKey = getKey() || "Copy or Subscription key here";
-        // var subscriptionKey = "cd529ca0a97f48b8a1f3bc36ecd73600";
+        var subscriptionKey = getKey() || "Copy your Subscription key here";
 
         var imageUrl = $("#imageUrlTextbox").val();
 
@@ -97,8 +86,8 @@ $(function () {
                 outputText += "Left: " + faceLeft + "<br>";
                 outputText += "Width: " + faceWidth + "<br>";
                 outputText += "Height: " + faceHeight + "<br>";
-                outputText += "Right Pupil: " + rightPupilX + ", " + rightPupilY + "<br>";
-                outputText += "Left Pupil: " + leftPupilX + ", " + leftPupilY + "<br>";
+                outputText += "Right Pupil: " + rightPupil.x + ", " + rightPupil.y + "<br>";
+                outputText += "Left Pupil: " + leftPupil.x + ", " + leftPupil.y + "<br>";
                 outputText += "Mouth: <br>";
                 outputText += " -Left: " + mouthLeft.x + ", " + mouthLeft.y + "<br>";
                 outputText += " -Right: " + mouthRight.x + ", " + mouthRight.y + "<br>";
@@ -118,7 +107,6 @@ $(function () {
 
             }
 
-
         }).fail(function (err) {
             $("#OutputDiv").text("ERROR!" + err.responseText);
         });
@@ -131,64 +119,15 @@ $(function () {
     };
 
 
-    $("#ChangeEmotionButton").click(function () {
-        hideMarkers();
-        ShowSurprise(rightPupilX, rightPupilY, leftPupilX, leftPupilY);
-        getFace();
-
-    });
-
-    var ShowSurprise = function (rightEyeX, rightEyeY, leftEyeX, leftEyeY) {
-        var faceImage = $("#ImageToAnalyze");
-
-        var surpriseEyeLeft = $("#SurpriseEye-Left");
-        var surpriseEyeRight = $("#SurpriseEye-Right");
-        var surpriseMouth = $("#SurpriseMouth");
-
-
-
-        var ratio = leftEyeWidth / surpriseEyeLeft.width();
-        var leftEyeHeight = surpriseEyeLeft.height() * ratio;
-        var leftEyeTop = leftPupilY - (leftEyeHeight / 2);
-        var leftEyeLeft = leftPupilX - (leftEyeWidth / 2);
-        surpriseEyeLeft.css("z-index", 100);
-        surpriseEyeLeft.css("height", leftEyeHeight);
-        surpriseEyeLeft.css("width", leftEyeWidth);
-        surpriseEyeLeft.css("top", leftEyeTop);
-        surpriseEyeLeft.css("left", leftEyeLeft);
-        surpriseEyeLeft.css("display", "block");
-
-        var ratio = rightEyeWidth / surpriseEyeRight.width();
-        var rightEyeHeight = surpriseEyeRight.height() * ratio;
-        var rightEyeTop = rightPupilY - (rightEyeHeight / 2);
-        var rightEyeLeft = rightPupilX - (rightEyeWidth / 2);
-        surpriseEyeRight.css("z-index", 100);
-        surpriseEyeRight.css("height", rightEyeHeight);
-        surpriseEyeRight.css("width", rightEyeWidth);
-        surpriseEyeRight.css("top", rightEyeTop);
-        surpriseEyeRight.css("left", rightEyeLeft);
-        surpriseEyeRight.css("display", "block");
-
-        var ratio = mouthWidth / surpriseMouth.width();
-        var mouthHeight = surpriseMouth.height() * ratio;
-        var mouthTop = mouthY;  //- (mouthHeight/3);
-        var mouthLeft = mouthX; // - (mouthWidth/2);
-        surpriseMouth.css("z-index", 100);
-        surpriseMouth.css("height", mouthHeight);
-        surpriseMouth.css("width", mouthWidth);
-        surpriseMouth.css("top", mouthTop);
-        surpriseMouth.css("left", mouthLeft);
-        surpriseMouth.css("display", "block");
-    }
-
     $("#imageUrlTextbox").change(function () {
         hideMarkers();
         showImage();
         getFaceInfo();
     })
 
-    $("#imageUrlTextbox").val("https://tena2013.eventpoint.com/resources/documents/p/tena2013/photos/913a496b-7099-e211-ae09-001ec953730b.jpg");
-    $("#imageUrlTextbox").val("http://content.latest-hairstyles.com/wp-content/uploads/2013/07/haircuts-for-round-faces-175x125.jpg");
+    // $("#imageUrlTextbox").val("https://tena2013.eventpoint.com/resources/documents/p/tena2013/photos/913a496b-7099-e211-ae09-001ec953730b.jpg");
+    // $("#imageUrlTextbox").val("http://content.latest-hairstyles.com/wp-content/uploads/2013/07/haircuts-for-round-faces-175x125.jpg");
+    $("#imageUrlTextbox").val("http://cache3.asset-cache.net/gc/481501023-close-up-portrait-of-old-black-man-with-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=esg%2bVK6qs4oIjoYYcweKEaG2pptAYfOPpuLOWcyxTSE%3d");
     showImage();
     getFaceInfo();
 

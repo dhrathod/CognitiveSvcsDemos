@@ -114,21 +114,6 @@ namespace EmotionsDemo
                 var likelyEmotion = emotionScoresList.First(e => e.EmotionValue == maxEmotionScore);
 
 
-
-                //var emotions = new EmotionScore[8];
-                //emotions[0] = new EmotionScore("anger", anger);
-                //emotions[1] = new EmotionScore("contempt", contempt);
-                //emotions[2] = new EmotionScore("disgust", disgust);
-                //emotions[3] = new EmotionScore("fear", fear);
-                //emotions[4] = new EmotionScore("happiness", happiness);
-                //emotions[5] = new EmotionScore("neutral", neutral);
-                //emotions[6] = new EmotionScore("surprise", surprise);
-                //emotions[7] = new EmotionScore("sadness", sadness);
-
-                //emotions.OrderByDescending(e=>e.EmotionValue);
-
-                //EmotionScore likelyEmotion = emotions.First();
-
                 string likelyEmotionText = string.Format("Face {0} is {1:N2}% likely to experiencing: {2}\n\n", 
                     faceNumber, likelyEmotion.EmotionValue * 100, likelyEmotion.EmotionName.ToUpper());
                 sb2.Append(likelyEmotionText);

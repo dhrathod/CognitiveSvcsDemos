@@ -30,7 +30,7 @@ namespace ThumbNailConsole
             {
                 binaryWrite.Write(thumbnailResult);
             }
-
+                
             Process.Start(thumbnaileFullPath);
             Process.Start(originalPicture);
 

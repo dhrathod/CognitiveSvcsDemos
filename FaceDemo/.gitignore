@@ -1,5 +1,5 @@
 #File containing subscription key
-scripts\getkey.js
+scripts/getkey.js
 
 # Windows image file caches
 Thumbs.db
