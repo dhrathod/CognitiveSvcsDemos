@@ -1,0 +1,28 @@
+﻿<div class="jumbotron">
+    <h1>Microsoft Cognitive Services</h1>
+    <h2>Face Recognition Demo</h2>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div>
+            <input type="text" name="imageUrlTextbox" id="imageUrlTextbox" class="urlinput">
+        </div>
+        <div id="OutputDiv">Output</div>
+
+    </div>
+    <div class="col-md-2">
+        <div id="PhotoDiv">
+            <img id="ImageToAnalyze" src="images/CartoonFace.png">
+            <div class="FaceLabel" id="LeftEyeDiv">LEFT</div>
+            <div class="FaceLabel" id="RightEyeDiv">RIGHT</div>
+            <div class="FaceLabel" id="NoseDiv">NOSE</div>
+            <div class="FaceLabel" id="MouthDiv">MOUTH</div>
+            <img src="images/Rectangle.png" id="Rectangle">
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/script.js"></script>
+}
