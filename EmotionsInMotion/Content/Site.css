@@ -1,0 +1,40 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+select,
+textarea {
+    max-width: 280px;
+}
+
+.urlinput{
+    width: 90%;
+}
+
+#PhotoDiv{
+  position: relative;
+}
+
+.EyeMouthImage
+ {
+  position: absolute;
+  left: 140px;
+  top: 210px;
+  /*width: 120px;*/
+  display: none;
+  z-index: 10;
+}
+
+.changeEmotionLink, #resetEmotionLink {
+    cursor: pointer;
+    padding-left:15px;
+    color: deepskyblue;
+    font-size: larger;
+}
