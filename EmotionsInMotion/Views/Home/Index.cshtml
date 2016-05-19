@@ -4,15 +4,21 @@
     
 </div>
 <div class="row">
-    <div class="col-md-8">
-        <div>Enter the URL of a picture of a face:</div>
-        <div>
-            <input type="text" id="imageUrlTextbox" class="urlinput">
-        </div>
+    <img src="samples/dg06thumb.jpg" data-photo="dg06.jpg" class="img-thumbnail" />
+    <img src="samples/dg09thumb.jpg" data-photo="dg09.jpg" class="img-thumbnail" />
+    <img src="samples/dg12thumb.jpg" data-photo="dg12.jpg" class="img-thumbnail" />
+    <img src="samples/dg02thumb.jpg" data-photo="dg02.jpg" class="img-thumbnail" />
+</div>
+    <div class="row">
+        <div class="col-md-8">
+            <div>Enter the URL of a picture of a face:</div>
+            <div>
+                <input type="text" id="imageUrlTextbox" class="urlinput">
+            </div>
 
-        <div id="OutputDiv"></div>
-        <div id="ChangeEmotionDiv">
-            Change emotion to:
+            <div id="OutputDiv"></div>
+            <div id="ChangeEmotionDiv">
+                Change emotion to:
                 <div class="changeEmotionLink">Anger</div>
                 <div class="changeEmotionLink">Contempt</div>
                 <div class="changeEmotionLink">Disgust</div>
@@ -22,41 +28,41 @@
                 <div class="changeEmotionLink">Sadness</div>
                 <div class="changeEmotionLink">Surprise</div>
                 <div id="resetEmotionLink">Reset</div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div id="PhotoDiv">
+                <img id="ImageToAnalyze" src="images/CartoonFace.png">
+
+                <img src="images/Anger-LeftEye.png" id="AngerLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Anger-RightEye.png" id="AngerRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Anger-Mouth.png" id="AngerMouth" class="EyeMouthImage EmotionImage">
+                <img src="images/Contempt-LeftEye.png" id="ContemptLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Contempt-RightEye.png" id="ContemptRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Contempt-Mouth.png" id="ContemptMouth" class="EyeMouthImage EmotionImage">
+                <img src="images/Disgust-LeftEye.png" id="DisgustLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Disgust-RightEye.png" id="DisgustRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Disgust-Mouth.png" id="DisgustMouth" class="EyeMouthImage EmotionImage">
+                <img src="images/Fear-LeftEye.png" id="FearLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Fear-RightEye.png" id="FearRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Fear-Mouth.png" id="FearMouth" class="EyeMouthImage EmotionImage">
+                <img src="images/Happiness-LeftEye.png" id="HappinessLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Happiness-RightEye.png" id="HappinessRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Happiness-Mouth.png" id="HappinessMouth" class="EyeMouthImage EmotionImage">
+                <img src="images/Neutral-LeftEye.png" id="NeutralLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Neutral-RightEye.png" id="NeutralRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Neutral-Mouth.png" id="NeutralMouth" class="EyeMouthImage EmotionImage">
+                <img src="images/Sadness-LeftEye.png" id="SadnessLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Sadness-RightEye.png" id="SadnessRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Sadness-Mouth.png" id="SadnessMouth" class="EyeMouthImage EmotionImage">
+                <img src="images/Surprise-LeftEye.png" id="SurpriseLeftEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Surprise-RightEye.png" id="SurpriseRightEye" class="EyeMouthImage EmotionImage">
+                <img src="images/Surprise-Mouth.png" id="SurpriseMouth" class="EyeMouthImage EmotionImage">
+
+            </div>
         </div>
     </div>
-    <div class="col-md-2">
-        <div id="PhotoDiv">
-            <img id="ImageToAnalyze" src="images/CartoonFace.png">
 
-            <img src="images/Anger-LeftEye.png" id="AngerLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Anger-RightEye.png" id="AngerRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Anger-Mouth.png" id="AngerMouth" class="EyeMouthImage EmotionImage">
-            <img src="images/Contempt-LeftEye.png" id="ContemptLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Contempt-RightEye.png" id="ContemptRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Contempt-Mouth.png" id="ContemptMouth" class="EyeMouthImage EmotionImage">
-            <img src="images/Disgust-LeftEye.png" id="DisgustLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Disgust-RightEye.png" id="DisgustRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Disgust-Mouth.png" id="DisgustMouth" class="EyeMouthImage EmotionImage">
-            <img src="images/Fear-LeftEye.png" id="FearLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Fear-RightEye.png" id="FearRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Fear-Mouth.png" id="FearMouth" class="EyeMouthImage EmotionImage">
-            <img src="images/Happiness-LeftEye.png" id="HappinessLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Happiness-RightEye.png" id="HappinessRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Happiness-Mouth.png" id="HappinessMouth" class="EyeMouthImage EmotionImage">
-            <img src="images/Neutral-LeftEye.png" id="NeutralLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Neutral-RightEye.png" id="NeutralRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Neutral-Mouth.png" id="NeutralMouth" class="EyeMouthImage EmotionImage">
-            <img src="images/Sadness-LeftEye.png" id="SadnessLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Sadness-RightEye.png" id="SadnessRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Sadness-Mouth.png" id="SadnessMouth" class="EyeMouthImage EmotionImage">
-            <img src="images/Surprise-LeftEye.png" id="SurpriseLeftEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Surprise-RightEye.png" id="SurpriseRightEye" class="EyeMouthImage EmotionImage">
-            <img src="images/Surprise-Mouth.png" id="SurpriseMouth" class="EyeMouthImage EmotionImage">
-
-        </div>
-    </div>
-</div>
-
-@section scripts{
-    <script src="~/Scripts/script.js"></script>
-}
+    @section scripts{
+        <script src="~/Scripts/script.js"></script>
+    }

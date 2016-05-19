@@ -6,6 +6,11 @@ $(function () {
 
 
     var showImage = function () {
+        // Hide links, so user doesn't click too soon.
+        $(".changeEmotionLink").css("display", "none");
+        $("#resetEmotionLink").css("display", "none");
+        
+
         var imageUrl = $("#imageUrlTextbox").val();
         // Hide any emotions from last image
         $(".EyeMouthImage").css("display", "none");
@@ -104,6 +109,8 @@ $(function () {
 
                 outputDiv.text("Original Emotion: " + originalEmotion);
                 $("#resetEmotionLink").text("Reset to " + originalEmotion);
+                $("#resetEmotionLink").css("display", "block");
+
             }
             else {
                 outputDiv.text("No face detected");
@@ -256,6 +263,14 @@ $(function () {
         getFaceInfo();
     })
 
+    $(".img-thumbnail").click(function () {
+        var image = $(this).attr("data-photo");
+        var imageUrl = "http://emotionsinmotion.azurewebsites.net/samples/" + image;
+        $("#imageUrlTextbox").val(imageUrl);
+        showImage();
+        getFaceInfo();
+    })
+    
     $("#imageUrlTextbox").val("https://tena2013.eventpoint.com/resources/documents/p/tena2013/photos/913a496b-7099-e211-ae09-001ec953730b.jpg");
     showImage();
     getFaceInfo();

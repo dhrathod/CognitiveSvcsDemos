@@ -280,6 +280,14 @@
     <Content Include="images\Surprise-LeftEye.png" />
     <Content Include="images\Surprise-Mouth.png" />
     <Content Include="images\Surprise-RightEye.png" />
+    <Content Include="samples\dg02.jpg" />
+    <Content Include="samples\dg02thumb.jpg" />
+    <Content Include="samples\dg06.jpg" />
+    <Content Include="samples\dg06thumb.jpg" />
+    <Content Include="samples\dg09.jpg" />
+    <Content Include="samples\dg09thumb.jpg" />
+    <Content Include="samples\dg12.jpg" />
+    <Content Include="samples\dg12thumb.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />

@@ -38,3 +38,19 @@ textarea {
     color: deepskyblue;
     font-size: larger;
 }
+
+    .changeEmotionLink:hover, #resetEmotionLink:hover {
+        background-color: darkblue;
+            color: white;
+
+    }
+
+.img-thumbnail {
+        background-color: deepskyblue;
+        cursor: pointer;
+}
+
+.img-thumbnail:hover{
+    background-color: darkblue;
+
+}
