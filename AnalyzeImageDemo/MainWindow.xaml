@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800" WindowState="Maximized">
     <StackPanel Orientation="Vertical">
-        <ComboBox Name="ImageUrlComboBox"></ComboBox>
-        <Button Name="AnalyzeButton" Click="AnalyzeButton_Click" Height="100px" Width="200px">
+        <ComboBox Name="ImageUrlComboBox" Width="600px" Height="30px" SelectionChanged="ImageUrlComboBox_SelectionChanged"></ComboBox>
+        <Button Name="AnalyzeButton" Click="AnalyzeButton_Click" Height="100px" Width="200px" FontSize="24">
             Analyze Image
         </Button>
 
@@ -23,12 +23,13 @@
 
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0">
                 <Image Name="SelectedImage" Source="{Binding SelectedValue, ElementName=ImageUrlComboBox}" Stretch="None"></Image>
-                <TextBlock Name="CaptionTextBox"></TextBlock>
+                <TextBlock Name="CaptionTextBox"  FontSize="24"></TextBlock>
             </StackPanel>
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="1" >
-                <Image Name="ShockingImage" Source="http://legendinmylivingroom.com/wp-content/uploads/2013/08/HomeAloneScream1.jpg" Stretch="None" Visibility="Collapsed"></Image>
-                    <TextBlock>Tags:</TextBlock>
-                    <ListBox Name="TagsListBox"></ListBox>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="1">
+                <Image Name="ShockingImage" Source="http://legendinmylivingroom.com/wp-content/uploads/2013/08/HomeAloneScream1.jpg" 
+                       Stretch="None" Visibility="Collapsed"></Image>
+                <TextBlock  FontSize="24">Tags:</TextBlock>
+                <ListBox Name="TagsListBox"  FontSize="24"></ListBox>
                 </StackPanel>
         </Grid>
         

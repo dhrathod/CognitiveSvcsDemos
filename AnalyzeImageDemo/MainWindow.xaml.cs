@@ -72,5 +72,12 @@ namespace AnalyzeImageDemo
 
 
         }
+
+        private void ImageUrlComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CaptionTextBox.Text = "";
+            TagsListBox.Items.Clear();
+            ShockingImage.Visibility = Visibility.Hidden;
+        }
     }
 }
